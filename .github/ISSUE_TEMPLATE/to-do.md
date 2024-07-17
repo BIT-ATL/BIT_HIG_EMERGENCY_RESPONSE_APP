@@ -7,13 +7,13 @@ assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Is this To-do related to a problem? Please describe.**
+A clear and concise description of what the problem is. 
 
-**Describe the to-do**
+**Describe theTo-do**
 A clear and concise description of what you want to happen.
 
-**Describe how this applies to the scope**
+**Describe how To-do this applies to scope**
 A clear and concise description why this to-do is important.
 
 **Additional context**

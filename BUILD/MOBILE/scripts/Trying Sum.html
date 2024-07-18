@@ -1,0 +1,36 @@
+// index.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const mysql = require('mysql');
+
+const app = express();
+const port = 3001;
+
+app.use(cors());
+app.use(bodyParser.json());
+
+// Create a MySQL connection pool
+const pool = mysql.createPool({
+  host: 'your-database-host',
+  user: 'your-database-username',
+  password: 'your-database-password',
+  database: 'your-database-name',
+});
+
+// Endpoint to submit emergency report
+app.post('/submit-report', (req, res) => {
+  const { location, eventType, details } = req.body;
+
+  const query = 'INSERT INTO emergency_reports (location, event_type, details) VALUES (?, ?, ?)';
+  pool.query(query, [location, eventType, details], (error, results) => {
+    if (error) {
+      return res.status(500).send(error);
+    }
+    res.status(200).send({ message: 'Report submitted successfully', reportId: results.insertId });
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});

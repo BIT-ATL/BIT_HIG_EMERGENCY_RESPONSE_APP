@@ -57,6 +57,7 @@ description:
 * [Expo Reference](https://docs.expo.dev/versions/latest/)
 * [Supabase Auth](https://supabase.com/docs/guides/auth)
 * [Supabase DB](https://supabase.com/docs/guides/database/overview)
+* [postgresql Documentation](https://www.postgresql.org/docs/)
 
 ### Public Safety
 * [Atlanta 311](https://www.atl311.com/311)

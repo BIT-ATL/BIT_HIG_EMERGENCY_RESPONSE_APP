@@ -10,6 +10,9 @@ npm-debug.*
 *.orig.*
 web-build/
 
+# directories
+./BRAND/MOOD_IMAGES
+
 # macOS
 .DS_Store
 
@@ -18,3 +21,4 @@ web-build/
 
 expo-env.d.ts
 # @end expo-cli
+DB/supabase/DB_SCHEMA.sql

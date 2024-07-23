@@ -2,7 +2,8 @@
 import React from 'react';
 import RootLayout from './_layout';
 import CreateEvent from './components/CreateEvent';
-import {View } from 'react-native';
+// import {View } from 'react-native';
+import { Pressable, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
 ////////////////////////////////////////
 // if not logged in: show login
 // else (must be logged in): show home
@@ -10,6 +11,6 @@ import {View } from 'react-native';
 export default function Home() {
   return ( 
     <View>
-        <CreateEvent/> 
+        <CreateEvent/>
     </View> );
 }

@@ -1,1 +1,4 @@
-index.tsx
+export const NotificationSettings = () => 
+{
+    return true;
+}
